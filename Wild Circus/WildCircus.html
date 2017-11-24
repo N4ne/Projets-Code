@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html >
+<head>
+  <meta charset="UTF-8">
+  <title>Wild Circus template</title>
+
+  <style>
+  table/*Tbleau de Prix*/
+  {
+      border-collapse: collapse;
+      box-shadow: 10px 10px 10px black;
+  }
+  td, th
+  {
+      border: 1px solid black;
+  }
+
+  body/*Couleur de fond*/
+  {
+    background-color: rgb(213, 216, 220);
+  }
+  h1/*couleur du titre+style*/
+  {
+    background-color: rgb(255, 102, 0);
+    font-style: italic;
+    font-weight: bold;
+    text-align: center;
+    font-size: 70px;
+    font-family: fantasy; Arial;
+    border: 3px black solid;
+    border-radius: 20px / 10px;
+    box-shadow: 6px 6px 10px black;
+  }
+
+  h2/*Couleur des Thèmes+styles*/
+  {
+    text-align: center;
+    text-decoration: underline;
+    background-color: rgb(243, 156, 18)
+  }
+
+
+  #conteneur/*des elements laugh,dream,marvel at */
+  {
+    justify-content: space-around;
+    display: flex;
+    border: 1px solid #444;
+  }
+
+  .element:nth-child(n)
+  {
+    background-color: rgb(128, 139, 150);
+  }
+  .element:nth-child(2n)
+  {
+    background-color: rgb(245, 176, 65);
+  }
+  .element:nth-child(3n)
+  {
+    background-color: rgb(128, 139, 150);
+  }
+
+  h3
+  {
+    text-decoration: underline;
+    text-align: center;
+  }
+
+  .flotte
+  {
+    float:top;
+    text-align: center;
+  }
+
+  </style>
+
+</head>
+
+<body>
+  <head>
+    <meta charset="UTF-8">
+    <title>Wild Circus</title>
+</head>
+
+<body>
+    <header>
+      <h1>Wild Circus</h1>
+        <hr/>
+      <nav>
+        <ul>
+            <li><a href="#Performances">Performances</a></li>
+            <li><a href="#About Us">About Us</a></li>
+            <li><a href="#Prices">Prices</a></li>
+            <li><a href="#Contact">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <hr/>
+
+    <section>
+      <h2 id="Performances">Performances</h2>
+      <ul>
+        <div id="conteneur">
+            <div class="element">
+            <h3>Laugh</h3>
+            <p class="flotte"><img src="https://i.imgur.com/C8G7vjq.jpg" alt="WildCircusLaughperformances" /></p>
+            <p>As an adult, come and discover our irresistible clowns, between practical jokes and pranks let yourself be carried away by their joy and fall back into childhood.</p>
+            </div>
+            <div class="element">
+            <h3>Dream</h3>
+            <p class="flotte"><img src="https://i.imgur.com/fX73ZUu.jpg" alt="WildCircusDreamPerformances" /></p>
+            <p>Let yourself be carried away in a world where the real and the imaginary are one, in the company of our talented magicians, discover a wonderful world limited only by your imagination.</p>
+            </div>
+            <div class="element">
+            <h3>Marvel at</h3>
+            <p class="flotte"><img src="https://i.imgur.com/exjCKGx.jpg" alt="WildCircusMarvelAtPerformances" /></p>
+            <p>Tame the untameable in the company of our tamers, between roar and razor-sharp claws, watch these fierce felines turn into sweet kittens.</p>
+          </div>
+        </div>
+      </ul>
+    </section>
+
+    <hr/>
+
+    <section>
+      <h2 id="About Us">About Us</h2>
+      <p>
+        <h4>
+        The "WildCircus" is born while its protagonists are still in their last years of study at the National Circus School in Montreal.
+        It is indeed there that they meet, and their colocation born this common project.
+        The first years of existence are dedicated to the administrative setting up of the circus and to the creation of a number that will be able to happen in festivals and occasional events.
+        He made a remarkable appearance during his stint at the Young Stage festival in Basel, winning four awards including the Cirque du Soleil Award and the bronze medal. It follows, a selection for the World Circus Festival of Tomorrow (Paris), where they won the Prize of the City of Paris, the President's Award of the Republic and the Gold Medal.
+        Today, our artists are at the heart of their first show and ready to meet their audience.
+        This circus promotes a direct relationship with the audience.
+        </h4>
+      </p>
+      <p>
+            <h3> Wild Circus Tour :<br /></h3>
+            <img  src=https://i.imgur.com/H9bWbKP.jpg alt="Wild Circus World Tour 2017" />
+
+      </p>
+    </section>
+
+    <hr/>
+
+    <section>
+      <h2 id="Prices">Prices</h2>
+
+        <table>
+          <caption>Tariff Grids</caption>
+
+          <tr>
+            <th>Days\Categories</th>
+            <th>Adult</th>
+            <th>Children Under 12 Years</th>
+            <th>Groups of 10 People</th>
+            <th>Schools</th>
+            <th>Handicapped</th>
+          </tr>
+          <tr>
+            <td>Monday/Tuesday/Thursday/Friday</td>
+            <td>10 €</td>
+            <td>6 €</td>
+            <td>7 €</td>
+            <td>6 €</td>
+            <td>5 €</td>
+          </tr>
+          <tr>
+            <td>Wednesday/Saturday/Sunday</td>
+            <td>15 €</td>
+            <td>11 €</td>
+            <td>12 €</td>
+            <td>11 €</td>
+            <td>10 €</td>
+          </tr>
+          <tr>
+            <td>School Vacation</td>
+            <td>15 €</td>
+            <td>11 €</td>
+            <td>12 €</td>
+            <td>11 €</td>
+            <td>10 €</td>
+          </tr>
+        </table>
+
+    </section>
+
+    <hr/>
+
+    <section>
+      <h2 id="Contact">Contact Us</h2>
+
+        <form method="post" action="traitement.php">
+
+          <fieldset>
+
+            <legend>Your Details</legend>
+
+            <p>
+              <label for="Name">Your Name</label>
+              <input type="text" name="Name" id="Name" placeholder="Martin" />
+            </p>
+
+            <p>
+              <label for="Age">Your Age</label>
+              <input type="number" name="Age" id="Age" placeholder="26" />
+            </p>
+
+            <p>
+              <label for="PhoneNumber">Your Phone Number</label>
+              <input type="number" name="PhoneNumber" id="PhoneNumber" placeholder="0623754933" />
+            </p>
+
+            <p>
+              <label for="Pays">What is your country?</label><br />
+              <select name="Pays" id="Pays">
+                <option value="Australia">Australia</option>
+                <option value="Belgium">Belgium</option>
+                <option value="Brazil">Brazil</option>
+                <option value="Canada">Canada</option>
+                <option value="Egypt">Egypt</option>
+                <option value="France">France</option>
+                <option value="India">India</option>
+                <option value="Japan">Japan</option>
+                <option value="South Africa">South Africa</option>
+                <option value="United States">United States</option>
+              </select>
+            <p>
+              <label for="Adress">Your Address</label>
+              <input type="text" name="Adress" id="Adress" placeholder="20 Rue de l'église 69650 Saint Germain au Mont d'or" />
+            </p>
+
+            <p>
+              <label for="Mail">Your Email</label>
+              <input type="email" name="Mail" id="Mail" placeholder="martinaurelle.ma@gmail.com" />
+            </p>
+
+            <p>
+              <label for="Question">Your question</label>
+              <input type="text" name="Question" id="Question" placeholder="how long is the show" />
+            </p>
+
+            <input type="submit" value="To Send" />
+
+          </fieldset>
+
+        </form>
+
+    </section>
+
+  <hr/>
+
+    <footer>
+
+      <p>
+        Wild Circus by AURELLE Martin
+      </p>
+
+      <p>
+        - France-IOI: If you want to visit <a href="http://www.france-ioi.org/user/perso.php?sLogin=martinaurelle&bShow=Afficher" target="_blank">my France.IOI profil</a> <br />
+        - SoloLearn: If you want to visit <a href="https://www.sololearn.com/Profile/6605767/HTML" target="_blank">my SoloLearn profil</a> <br />
+        - Wild Code School - 2017
+      </p>
+
+    </footer>
+</body>
+
+
+</body>
+</html>
